@@ -111,7 +111,7 @@ import { VisitLoggerService } from '../../services/visit-logger.service';
             <h2>أسعارنا</h2>
             <p>نسعّر خدماتنا بعد معاينة العفش من قبل المندوب المختص. نقدم عروض أسعار تنافسية ومناسبة لجميع العملاء مع مراعاة حجم العفش ومسافة النقل ومدى تعقيد عملية الفك والتركيب.</p>
             <p>لا تتردد في الاتصال بنا لطلب معاينة مجانية والحصول على سعر دقيق لخدمات نقل العفش.</p>
-            <img src="assets/images/mony.png" alt="أسعار مناسبة" style="width: 100%; border-radius: 8px; margin-top: 20px;">
+            <img src="/assets/images/mony.png" alt="أسعار مناسبة" style="width: 100%; border-radius: 8px; margin-top: 20px;">
           </section>
 
           <section class="coverage">
@@ -225,7 +225,7 @@ import { VisitLoggerService } from '../../services/visit-logger.service';
 
     /* ترويسة الصفحة */
     header {
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/logo.png');
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/logo.png');
       background-size: cover;
       background-position: center;
       color: white;
@@ -418,7 +418,7 @@ import { VisitLoggerService } from '../../services/visit-logger.service';
 
     /* قسم لماذا نحن */
     .why-us {
-      background: linear-gradient(rgba(233, 247, 254, 0.9), rgba(233, 247, 254, 0.9)), url('assets/images/why-us-bg.jpg');
+      background: linear-gradient(rgba(233, 247, 254, 0.9), rgba(233, 247, 254, 0.9)), url('/assets/images/why-us-bg.jpg');
       background-size: cover;
       background-position: center;
       padding: 60px 30px;
@@ -649,22 +649,22 @@ export class FurnitureTransportationComponent implements OnInit {
     {
       title: 'فك وتركيب العفش',
       description: 'فنيون متخصصون محترفون في فك وتركيب جميع أنواع غرف النوم، المطابخ، المكيفات، الستائر، النجف، والسخانات.',
-      image: 'assets/images/1.png'
+      image: '/assets/images/1.png'
     },
     {
       title: 'تغليف العفش',
       description: 'نستخدم مواد تغليف عالية الجودة لحماية عفشكم من الخدوش والتلف أثناء عملية النقل.',
-      image: 'assets/images/cover.jpeg'
+      image: '/assets/images/cover.jpeg'
     },
     {
       title: 'نقل العفش',
       description: 'سيارات مقفولة ومجهزة بشكل خاص لنقل العفش إلى جميع أنحاء المملكة العربية السعودية.',
-      image: 'assets/images/tran.jpg'
+      image: '/assets/images/tran.jpg'
     },
     {
       title: 'خدمة الضمان',
       description: 'نقدم ضماناً على خدماتنا لضمان رضاكم التام عن جودة العمل المقدم.',
-      image: 'assets/images/quality.png'
+      image: '/assets/images/quality.png'
     }
   ];
 
@@ -692,12 +692,12 @@ export class FurnitureTransportationComponent implements OnInit {
   ];
 
   galleryImages = [
-    { src: 'assets/images/gallery1.jpeg', alt: 'نقل عفش في الرياض' },
-    { src: 'assets/images/gallery2.jpeg', alt: 'تغليف العفش' },
-    { src: 'assets/images/gallery3.jpeg', alt: 'فك وتركيب' },
-    { src: 'assets/images/gallery4.jpeg', alt: 'سيارة نقل مجهزة' },
-    { src: 'assets/images/gallery5.jpeg', alt: 'مواد التغليف' },
-    { src: 'assets/images/gallery6.jpeg', alt: 'فنيون محترفون' }
+    { src: '/assets/images/gallery1.jpeg', alt: 'نقل عفش في الرياض' },
+    { src: '/assets/images/gallery2.jpeg', alt: 'تغليف العفش' },
+    { src: '/assets/images/gallery3.jpeg', alt: 'فك وتركيب' },
+    { src: '/assets/images/gallery4.jpeg', alt: 'سيارة نقل مجهزة' },
+    { src: '/assets/images/gallery5.jpeg', alt: 'مواد التغليف' },
+    { src: '/assets/images/gallery6.jpeg', alt: 'فنيون محترفون' }
   ];
 
   serviceCities = [
