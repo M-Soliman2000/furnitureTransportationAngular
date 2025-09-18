@@ -171,7 +171,7 @@ import { Title, Meta } from '@angular/platform-browser';
                   <h4 class="mb-3">⭐ خدماتنا الأساسية:</h4>
                   <ul style="font-size: 17px; line-height: 1.8;">
                     <li>✅ نقل عفش في جدة</li>
-                    <li>✅ نقل أثاث في جدة</li>
+                    <li>✅ نقل أثاث في جدة</li> 
                     <li>✅ نقل مكاتب في جدة</li>
                   </ul>
 
