@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VisitLoggerService } from '../../services/visit-logger.service';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-furniture-transportation',
@@ -14,6 +15,20 @@ import { VisitLoggerService } from '../../services/visit-logger.service';
           <div class="tagline">نقل عفش مع الفك والتركيب والتغليف والضمان - في جدة وجميع أنحاء المملكة العربية السعودية</div>
         </div>
       </header>
+
+      <!-- Fixed Contact Icons -->
+      <div class="fixed-contact-icons" [class.hidden]="contactIconsHidden">
+        <a href="tel:0559160622" class="contact-icon phone-icon" [class.hidden]="contactIconsHidden" title="اتصل بنا">
+          <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/966559160622" target="_blank" class="contact-icon whatsapp-icon" [class.hidden]="contactIconsHidden" title="واتساب">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <button class="contact-icon close-icon" (click)="toggleContactIcons()" title="إخفاء/إظهار">
+          <i class="fas fa-times" *ngIf="!contactIconsHidden"></i>
+          <i class="fas fa-phone-alt" *ngIf="contactIconsHidden"></i>
+        </button>
+      </div>
 
       <div class="container">
         <section class="contact">
@@ -132,9 +147,19 @@ import { VisitLoggerService } from '../../services/visit-logger.service';
             </div>
           </section>
 
-          <section class="services py-5" style="background-color: #f9f9f9;">
-            <div class="container">
+          <div class="container">
               <div class="row align-items-center">
+                <div class="col-md-3 text-center">
+                  <img src="/assets/images/logo.png" alt="شركة الضمان الذهبي لنقل العفش" class="img-fluid rounded shadow company-logo">
+                </div>
+
+              </div>
+            </div>
+
+          <!-- Updated section with logo on the left -->
+          <section class="services py-5" style="background-color: #f9f9f9;">
+            <div>
+            <div class="container">
                 <div class="col-md-7">
                   <h2 class="mb-4">خدماتنا | شركة الضمان الذهبي لنقل العفش والأثاث في جدة</h2>
                   <p class="mb-4">
@@ -160,10 +185,6 @@ import { VisitLoggerService } from '../../services/visit-logger.service';
                     <li>✔️ التزام بالمواعيد ورضا العملاء</li>
                   </ul>
                 </div>
-
-                <div class="col-md-5 text-center">
-                  <img src="images/logo.png" alt="شركة الضمان الذهبي لنقل العفش" class="img-fluid rounded shadow">
-                </div>
               </div>
             </div>
           </section>
@@ -180,12 +201,12 @@ import { VisitLoggerService } from '../../services/visit-logger.service';
         </section>
 
         <!-- Visit Logs Section (for debugging - can be removed in production) -->
-        <section class="visit-logs" style="margin-top: 40px; padding: 20px; background-color: #f0f0f0; border-radius: 8px;">
+        <!-- <section class="visit-logs" style="margin-top: 40px; padding: 20px; background-color: #f0f0f0; border-radius: 8px;">
           <h3>إحصائيات الزيارات</h3>
           <p>عدد الزيارات: {{ visitCount }}</p>
           <button (click)="downloadLogs()" class="btn-primary" style="margin-left: 10px;">تحميل سجل الزيارات</button>
           <button (click)="clearLogs()" class="btn-primary">مسح السجلات</button>
-        </section>
+        </section> -->
       </div>
 
       <footer>
@@ -221,6 +242,62 @@ import { VisitLoggerService } from '../../services/visit-logger.service';
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
+    }
+
+    /* Fixed Contact Icons Styles */
+    .fixed-contact-icons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 24px;
+      color: white;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      border: none;
+      cursor: pointer;
+    }
+
+    .phone-icon {
+      background-color: #25d366;
+    }
+
+    .phone-icon:hover {
+      background-color: #20b954;
+      transform: scale(1.1);
+      color: white;
+    }
+
+    .whatsapp-icon {
+      background-color: #25d366;
+    }
+
+    .whatsapp-icon:hover {
+      background-color: #20b954;
+      transform: scale(1.1);
+      color: white;
+    }
+
+    .close-icon {
+      background-color: #8e44ad;
+    }
+
+    .close-icon:hover {
+      background-color: #7d3c98;
+      transform: scale(1.1);
     }
 
     /* ترويسة الصفحة */
@@ -361,6 +438,7 @@ import { VisitLoggerService } from '../../services/visit-logger.service';
     /* قسم الخدمات */
     .services {
       background-color: white;
+      width: 100%;
       border-radius: 8px;
       padding: 30px;
       margin: 30px 0;
@@ -414,6 +492,17 @@ import { VisitLoggerService } from '../../services/visit-logger.service';
 
     .service-content {
       padding: 20px;
+    }
+
+    /* Company Logo Styling */
+    .company-logo {
+      max-height: 300px;
+      width: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .company-logo:hover {
+      transform: scale(1.05);
     }
 
     /* قسم لماذا نحن */
@@ -585,6 +674,15 @@ import { VisitLoggerService } from '../../services/visit-logger.service';
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     }
 
+    .fixed-contact-icons.hidden .phone-icon,
+    .fixed-contact-icons.hidden .whatsapp-icon {
+      display: none;
+    }
+
+    .contact-icon.hidden {
+      display: none;
+    }
+
     /* التجاوب مع الشاشات المختلفة */
     @media (max-width: 768px) {
       .pricing-coverage {
@@ -622,11 +720,28 @@ import { VisitLoggerService } from '../../services/visit-logger.service';
       .keywords-list {
         justify-content: center;
       }
+
+      .fixed-contact-icons {
+        right: 10px;
+        bottom: 10px;
+      }
+
+      .contact-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+      }
+
+      .company-logo {
+        margin-top: 20px;
+        max-height: 200px;
+      }
     }
   `]
 })
 export class FurnitureTransportationComponent implements OnInit {
   visitCount = 0;
+  contactIconsHidden = false;
 
   keywords = [
     'نقل عفش جدة',
@@ -711,15 +826,46 @@ export class FurnitureTransportationComponent implements OnInit {
     'وغيرها من المدن والمناطق'
   ];
 
-  constructor(private visitLoggerService: VisitLoggerService) {}
+  constructor(
+    private visitLoggerService: VisitLoggerService,
+    private titleService: Title,
+    private metaService: Meta
+  ) {}
 
   ngOnInit(): void {
     this.updateVisitCount();
+    this.setPageMetadata();
+  }
+
+  private setPageMetadata(): void {
+    // Set page title for browser tab
+    this.titleService.setTitle('الضمان الذهبي لنقل الأثاث - أفضل شركة نقل عفش في جدة والسعودية');
+    
+    // Set favicon
+    this.setFavicon('/assets/images/logo.png');
+    
+    // Set meta description
+    this.metaService.updateTag({
+      name: 'description',
+      content: 'مؤسسة الضمان الذهبي لنقل الأثاث - خدمات نقل العفش مع الفك والتركيب والتغليف والضمان في جدة وجميع أنحاء المملكة العربية السعودية. اتصل الآن: 0559160622'
+    });
+  }
+
+  private setFavicon(iconUrl: string): void {
+    const link: HTMLLinkElement = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/png';
+    link.rel = 'shortcut icon';
+    link.href = iconUrl;
+    document.getElementsByTagName('head')[0].appendChild(link);
   }
 
   private updateVisitCount(): void {
     const logs = this.visitLoggerService.getAllVisitLogs();
     this.visitCount = logs.length;
+  }
+
+  toggleContactIcons(): void {
+    this.contactIconsHidden = !this.contactIconsHidden;
   }
 
   downloadLogs(): void {
