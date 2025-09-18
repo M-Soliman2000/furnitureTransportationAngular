@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://furniture-transportation-git-49ecf7-mahmouds-projects-50b0e348.vercel.app/sitemap.xml

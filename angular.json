@@ -33,7 +33,9 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/robots.txt",
+              "src/sitemap.xml"
             ],
             "styles": [
               "src/styles.css"
@@ -52,9 +54,16 @@
                   "type": "anyComponentStyle",
                   "maximumWarning": "8kb",
                   "maximumError": "10kb"
-              }
+                }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "optimization": true,
+              "buildOptimizer": true,
+              "extractLicenses": true,
+              "sourceMap": false,
+              "namedChunks": false,
+              "aot": true,
+              "vendorChunk": false
             },
             "development": {
               "buildOptimizer": false,
@@ -105,5 +114,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
