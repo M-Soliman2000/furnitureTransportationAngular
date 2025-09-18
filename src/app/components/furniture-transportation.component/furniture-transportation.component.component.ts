@@ -8,6 +8,11 @@ import { Title, Meta } from '@angular/platform-browser';
   standalone: true,
   imports: [CommonModule],
   template: `
+
+  <head>
+        <meta name="google-site-verification" content="TIeKoV77yQgpISEm2kiSA6ciG8o3kkbYEmU9n5pX_UU" />
+
+  </head>
     <div class="furniture-page" dir="rtl">
       <header>
         <div class="container">
