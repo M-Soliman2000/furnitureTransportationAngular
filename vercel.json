@@ -1,18 +1,21 @@
 {
   "version": 2,
+  "buildCommand": "npm run build:ssr",
+  "outputDirectory": "dist/furniture-transportation-angular",
   "builds": [
     {
-      "src": "dist/furniture-transportation-angular/server/server.mjs",
+      "src": "package.json",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "handle": "filesystem"
+      "src": "/(.*\\.(js|css|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|otf|map|txt|xml))",
+      "dest": "/browser/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "dist/furniture-transportation-angular/server/server.mjs"
+      "dest": "/server/server.mjs"
     }
   ]
 }
