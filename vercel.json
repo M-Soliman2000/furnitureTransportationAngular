@@ -1,23 +1,25 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "dist/furniture-transportation-angular/server/main.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "dist/furniture-transportation-angular/browser/**",
-      "use": "@vercel/static"
+  "functions": {
+    "dist/furniture-transportation-angular/server/main.js": {
+      "runtime": "nodejs18.x"
     }
-  ],
+  },
   "routes": [
     {
-      "src": "/(.*\\.(js|css|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot))",
-      "dest": "/dist/furniture-transportation-angular/browser/$1"
+      "src": "/.*\\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      },
+      "dest": "/dist/furniture-transportation-angular/browser/$0"
+    },
+    {
+      "handle": "filesystem"
     },
     {
       "src": "/(.*)",
       "dest": "/dist/furniture-transportation-angular/server/main.js"
     }
-  ]
+  ],
+  "outputDirectory": "dist/furniture-transportation-angular/browser"
 }
