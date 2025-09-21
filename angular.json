@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/furniture-transportation-angular",
+            "outputPath": "dist/furniture-transportation-angular/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -111,6 +111,65 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/furniture-transportation-angular/server",
+            "main": "src/server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "buildOptimizer": true,
+              "outputHashing": "media",
+              "optimization": true,
+              "sourceMap": false,
+              "extractLicenses": true,
+              "vendorChunk": false
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@angular-devkit/build-angular:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "furniture-transportation-angular:build:development",
+              "serverTarget": "furniture-transportation-angular:server:development"
+            },
+            "production": {
+              "browserTarget": "furniture-transportation-angular:build:production",
+              "serverTarget": "furniture-transportation-angular:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "furniture-transportation-angular:build:production",
+              "serverTarget": "furniture-transportation-angular:server:production"
+            },
+            "development": {
+              "browserTarget": "furniture-transportation-angular:build:development",
+              "serverTarget": "furniture-transportation-angular:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
