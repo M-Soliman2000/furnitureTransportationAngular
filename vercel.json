@@ -2,22 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": [
-          "dist/**"
-        ]
-      }
+      "src": "dist/furniture-transportation-angular/server/main.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "dist/furniture-transportation-angular/browser/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "handle": "filesystem"
+      "src": "/(.*\\.(js|css|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot))",
+      "dest": "/dist/furniture-transportation-angular/browser/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "dist/furniture-transportation-angular/server/main.js"
+      "dest": "/dist/furniture-transportation-angular/server/main.js"
     }
   ]
 }
