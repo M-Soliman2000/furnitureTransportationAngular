@@ -771,7 +771,7 @@ export class FurnitureTransportationComponent implements OnInit {
   ) {}
 
    ngOnInit(): void {
-    this.updateVisitCount();
+    // this.updateVisitCount();
     this.setAdvancedSEOMetadata();
     
     // Only run browser-specific code in browser
@@ -848,21 +848,21 @@ export class FurnitureTransportationComponent implements OnInit {
     document.getElementsByTagName('head')[0].appendChild(link);
   }
 
-  private updateVisitCount(): void {
-    const logs = this.visitLoggerService.getAllVisitLogs();
-    this.visitCount = logs.length;
-  }
+  // private updateVisitCount(): void {
+  //   const logs = this.visitLoggerService.getAllVisitLogs();
+  //   this.visitCount = logs.length;
+  // }
 
   toggleContactIcons(): void {
     this.contactIconsHidden = !this.contactIconsHidden;
   }
 
-  downloadLogs(): void {
-    this.visitLoggerService.downloadVisitLogs();
-  }
+  // downloadLogs(): void {
+  //   this.visitLoggerService.downloadVisitLogs();
+  // }
 
-  clearLogs(): void {
-    this.visitLoggerService.clearLogs();
-    this.updateVisitCount();
-  }
+  // clearLogs(): void {
+  //   this.visitLoggerService.clearLogs();
+  //   this.updateVisitCount();
+  // }
 }
