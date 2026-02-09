@@ -13,9 +13,9 @@ import { Title, Meta } from '@angular/platform-browser';
       <div class="seo-content-hidden" style="display: none;">
         <h1>{{ seoTitle }}</h1>
         <p>{{ seoDescription }}</p>
-        <div itemscope itemtype="https://schema.org/MovingCompany">
-          <span itemprop="name">مؤسسة الضمان الذهبي لنقل الأثاث</span>
-          <span itemprop="telephone">0559160622</span>
+        <div itemscope itemtype="https://schema.org/LocalBusiness">
+          <span itemprop="name">وايت مياه الزعيم</span>
+          <span itemprop="telephone">0547293083</span>
           <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
             <span itemprop="addressCountry">SA</span>
             <span itemprop="addressRegion">جدة</span>
@@ -25,17 +25,20 @@ import { Title, Meta } from '@angular/platform-browser';
 
       <header>
         <div class="container">
-          <h1 class="logo">مؤسسة الضمان الذهبي لنقل الاثاث - 0559160622</h1>
-          <p class="tagline">نقل عفش مع الفك والتركيب والتغليف والضمان - في جدة وجميع أنحاء المملكة العربية السعودية</p>
+          <div class="logo-container">
+            <img src="/assets/images/logo.png" alt="وايت مياه الزعيم" class="company-logo-header">
+          </div>
+          <h1 class="logo">وايت مياه الزعيم - 0547293083</h1>
+          <p class="tagline">توصيل مياه تحلية نقية لجميع أنحاء جدة - خدمة 24 ساعة - صهاريج 7 طن - موتور رفع وليات طويلة</p>
         </div>
       </header>
 
       <!-- Fixed Contact Icons -->
       <div class="fixed-contact-icons" [class.hidden]="contactIconsHidden">
-        <a href="tel:0559160622" class="contact-icon phone-icon" [class.hidden]="contactIconsHidden" title="اتصل بنا">
+        <a href="tel:0547293083" class="contact-icon phone-icon" [class.hidden]="contactIconsHidden" title="اتصل بنا">
           <i class="fas fa-phone"></i>
         </a>
-        <a href="https://wa.me/966559160622" target="_blank" class="contact-icon whatsapp-icon" [class.hidden]="contactIconsHidden" title="واتساب">
+        <a href="https://wa.me/966547293083" target="_blank" class="contact-icon whatsapp-icon" [class.hidden]="contactIconsHidden" title="واتساب">
           <i class="fab fa-whatsapp"></i>
         </a>
         <button class="contact-icon close-icon" (click)="toggleContactIcons()" title="إخفاء/إظهار">
@@ -47,66 +50,72 @@ import { Title, Meta } from '@angular/platform-browser';
       <div class="container">
         <!-- Main content sections with proper headings for SEO -->
         <section class="contact">
-          <h2>اتصل بنا الآن للحصول على أفضل خدمة نقل عفش</h2>
-          <p><i class="fas fa-phone"></i> هاتف: 0559160622</p>
+          <h2>اتصل بنا الآن للحصول على أفضل خدمة توصيل مياه</h2>
+          <p><i class="fas fa-phone"></i> هاتف: 0547293083</p>
           <br>
-          <a href="https://wa.me/966559160622" target="_blank" class="btn-primary">
+          <a href="https://wa.me/966547293083" target="_blank" class="btn-primary">
             اطلب خدمة الآن
           </a>
         </section>
 
         <!-- Enhanced SEO section with more structured content -->
         <section class="seo-section">
-          <h2 class="seo-title">أفضل شركة نقل عفش متخصصة في جدة والمملكة العربية السعودية</h2>
+          <h2 class="seo-title">أفضل خدمة توصيل مياه تحلية في جدة - وايت مياه الزعيم</h2>
 
           <div class="seo-image-container">
             <div class="seo-image">
               <div class="seo-image-content">
-                <div class="seo-image-logo">الضمان الذهبي لنقل الإثاث</div>
-                <div class="seo-image-text">اضمن عفشك بأفضل خدمة نقل في جدة والمملكة</div>
+                <div class="seo-image-logo">وايت مياه الزعيم</div>
+                <div class="seo-image-text">مياه نقية ونظيفة بأفضل سعر وأسرع توصيل في جدة</div>
               </div>
             </div>
           </div>
 
           <div class="seo-content">
-            <h3>شركة نقل عفش جدة - الخيار الأمثل لنقل آمن ومضمون</h3>
+            <h3>وايت مياه الزعيم - الخيار الأمثل لتوصيل مياه تحلية نقية في جدة</h3>
             <p>
-              إذا كنت تبحث عن <strong>شركة نقل عفش في جدة</strong> موثوقة ومحترفة، فإن مؤسسة الضمان الذهبي هي الخيار الأمثل لك. 
-              نحن نقدم خدمات <strong>نقل الأثاث في جدة</strong> بأعلى معايير الجودة والأمان، مع فريق من الفنيين المتخصصين 
-              في <strong>فك وتركيب العفش</strong> وخدمات <strong>تغليف الأثاث</strong> المحترفة.
+              إذا كنت تبحث عن <strong>توصيل مياه تحلية في جدة</strong> موثوقة ونقية، فإن وايت مياه الزعيم هي الخيار الأمثل لك. 
+              نحن نقدم خدمات <strong>توصيل مياه الشرب النقية في جدة</strong> بأعلى معايير الجودة والنظافة، مع صهاريج حديثة سعة 
+              <strong>7 طن</strong> وخدمات <strong>موتور رفع للخزانات المرتفعة</strong> وليات طويلة.
             </p>
 
-            <h3>خدمات نقل العفش المتكاملة في جميع مدن المملكة</h3>
+            <h3>خدمات توصيل مياه التحلية المتكاملة في جميع أحياء جدة</h3>
             <p>
-              تشمل خدماتنا <strong>نقل عفش الرياض</strong> و<strong>نقل عفش مكة المكرمة</strong> و<strong>نقل عفش المدينة المنورة</strong> 
-              بالإضافة إلى خدمات <strong>نقل المكاتب</strong> و<strong>نقل الأجهزة الكهربائية</strong>. نحن نستخدم أحدث الأساليب 
-              في التغليف والنقل لضمان وصول عفشك بحالة ممتازة.
+              تشمل خدماتنا <strong>توصيل مياه الروضة</strong> و<strong>توصيل مياه الفيصلية</strong> و<strong>توصيل مياه الصفا والمروة</strong> 
+              بالإضافة إلى <strong>النخيل والسامر والشاطئ والنسيم</strong> و<strong>توصيل مياه للمطاعم والكافيهات</strong>. نحن نوفر 
+              <strong>فاتورة ضريبية وسجل تجاري</strong> لخدمة المطاعم والكافيهات والمنشآت التجارية.
             </p>
 
-            <h3>لماذا نحن أفضل شركة نقل عفش في السعودية؟</h3>
+            <h3>لماذا نحن أفضل شركة توصيل مياه في جدة؟</h3>
             <ul>
-              <li>✓ فريق فنيين محترفين مدربين على أعلى مستوى</li>
-              <li>✓ سيارات نقل مجهزة ومقفولة لحماية العفش</li>
-              <li>✓ خدمات فك وتركيب شاملة لجميع أنواع الأثاث</li>
-              <li>✓ تغليف احترافي بمواد عالية الجودة</li>
-              <li>✓ أسعار تنافسية مع ضمان على الخدمة</li>
-              <li>✓ خدمة عملاء متاحة 24/7</li>
+              <li>✓ خدمة 24 ساعة - نصلك في أي وقت</li>
+              <li>✓ صهاريج مياه حديثة سعة 7 طن</li>
+              <li>✓ موتور رفع للخزانات المرتفعة</li>
+              <li>✓ ليات طويلة للوصول لأي مكان</li>
+              <li>✓ أسعار تنافسية - خصم 30٪</li>
+              <li>✓ مياه تحلية نقية وآمنة</li>
+              <li>✓ فاتورة ضريبية وسجل تجاري</li>
+              <li>✓ خدمة عملاء مميزة</li>
             </ul>
 
             <div class="cities-service">
-              <h3>مناطق خدماتنا في المملكة العربية السعودية</h3>
+              <h3>مناطق خدماتنا في جدة</h3>
               <div class="cities-grid">
                 <div class="city-item">
-                  <h4>نقل عفش جدة</h4>
-                  <p>خدمة نقل عفش متكاملة في جدة مع فنيين متخصصين</p>
+                  <h4>وايت مياه الروضة</h4>
+                  <p>توصيل سريع لمياه التحلية في حي الروضة</p>
                 </div>
                 <div class="city-item">
-                  <h4>نقل عفش الرياض</h4>
-                  <p>أفضل شركة نقل أثاث في الرياض بأسعار مناسبة</p>
+                  <h4>وايت مياه الفيصلية</h4>
+                  <p>خدمة توصيل مياه نقية في الفيصلية بأفضل الأسعار</p>
                 </div>
                 <div class="city-item">
-                  <h4>نقل عفش مكة المكرمة</h4>
-                  <p>خدمات نقل العفش في مكة مع الضمان الشامل</p>
+                  <h4>وايت مياه الصفا والمروة</h4>
+                  <p>توصيل مياه تحلية في الصفا والمروة على مدار الساعة</p>
+                </div>
+                <div class="city-item">
+                  <h4>وايت مياه النخيل والسامر</h4>
+                  <p>خدمة توصيل مياه في النخيل والسامر والشاطئ والنسيم</p>
                 </div>
               </div>
             </div>
@@ -122,8 +131,8 @@ import { Title, Meta } from '@angular/platform-browser';
 
         <!-- Rest of your existing sections... -->
         <section class="services">
-          <h2 class="service-title">خدماتنا المتكاملة لنقل العفش</h2>
-          <p>نقدم في شركتنا خدمات نقل العفش المتكاملة التي تشمل الفك والتركيب والتغليف بأسعار مناسبة مع ضمان على الخدمة. نحن نستخدم سيارات مقفولة مجهزة خصيصاً لنقل العفش لحماية أغراضكم أثناء التنقل بين مدن المملكة العربية السعودية.</p>
+          <h2 class="service-title">خدماتنا المتكاملة لتوصيل مياه التحلية</h2>
+          <p>نقدم في شركتنا خدمات توصيل مياه التحلية المتكاملة بصهاريج سعة 7 طن مع موتور رفع وليات طويلة بأسعار تنافسية. نحن نوفر فاتورة ضريبية وسجل تجاري للمطاعم والكافيهات. خدمة 24 ساعة لجميع أحياء جدة.</p>
 
           <div class="service-list">
             <div class="service-item" *ngFor="let service of services">
@@ -138,6 +147,17 @@ import { Title, Meta } from '@angular/platform-browser';
           </div>
         </section>
 
+        <!-- Video Section -->
+        <section class="video-section">
+          <h2 class="video-title">شاهد خدماتنا المميزة</h2>
+          <div class="video-container">
+            <video controls class="service-video" poster="/assets/images/water.jpg">
+              <source src="/assets/images/work2.mp4" type="video/mp4">
+              المتصفح الخاص بك لا يدعم تشغيل الفيديو.
+            </video>
+          </div>
+        </section>
+
         <!-- Continue with rest of your template... -->
         <!-- Your existing sections: why-us, gallery, pricing-coverage, etc. -->
       </div>
@@ -148,9 +168,9 @@ import { Title, Meta } from '@angular/platform-browser';
             <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook"></i></a>
             <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
             <a href="#" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/966559160622" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://wa.me/966547293083" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
           </div>
-          <p>مؤسسة الضمان الذهبي لنقل الاثاث - خدمات نقل عفش مع الفك والتركيب والتغليف والضمان في جميع أنحاء المملكة العربية السعودية</p>
+          <p>وايت مياه الزعيم - خدمات توصيل مياه تحلية نقية على مدار 24 ساعة في جميع أنحاء جدة - صهاريج 7 طن - موتور رفع وليات طويلة</p>
           <p>جميع الحقوق محفوظة ©2024</p>
         </div>
       </footer>
@@ -165,10 +185,12 @@ import { Title, Meta } from '@angular/platform-browser';
     }
 
     .furniture-page {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background-color: #f8f9fa;
+      font-family: 'Cairo', 'Tajawal', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.8;
+      color: #1a1a1a;
+      background: linear-gradient(135deg, #0a4275 0%, #1565c0 50%, #0d47a1 100%);
+      min-height: 100vh;
+      background-attachment: fixed;
     }
 
     .container {
@@ -185,136 +207,228 @@ import { Title, Meta } from '@angular/platform-browser';
       z-index: 1000;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 12px;
     }
 
     .contact-icon {
-      width: 60px;
-      height: 60px;
+      width: 65px;
+      height: 65px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      font-size: 24px;
+      font-size: 26px;
       color: white;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      border: none;
+      transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      border: 3px solid rgba(255, 255, 255, 0.3);
       cursor: pointer;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+      50% {
+        box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+      }
     }
 
     .phone-icon {
-      background-color: #25d366;
+      background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
     }
 
     .phone-icon:hover {
-      background-color: #20b954;
-      transform: scale(1.1);
+      background: linear-gradient(135deg, #0083b0 0%, #00b4db 100%);
+      transform: scale(1.15) rotate(10deg);
       color: white;
     }
 
     .whatsapp-icon {
-      background-color: #25d366;
+      background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
     }
 
     .whatsapp-icon:hover {
-      background-color: #20b954;
-      transform: scale(1.1);
+      background: linear-gradient(135deg, #128c7e 0%, #25d366 100%);
+      transform: scale(1.15) rotate(-10deg);
       color: white;
     }
 
     .close-icon {
-      background-color: #8e44ad;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
 
     .close-icon:hover {
-      background-color: #7d3c98;
-      transform: scale(1.1);
+      background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+      transform: scale(1.15);
     }
 
     /* ترويسة الصفحة */
     header {
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/logo.png');
+      background: linear-gradient(135deg, rgba(13, 71, 161, 0.92) 0%, rgba(10, 66, 117, 0.92) 100%), 
+                  url('/assets/images/header.PNG');
       background-size: cover;
       background-position: center;
+      background-attachment: fixed;
       color: white;
-      padding: 40px 0;
+      padding: 100px 0;
       text-align: center;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+      border-bottom: 5px solid #FFD700;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.15) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 80%, rgba(255, 215, 0, 0.15) 0%, transparent 50%);
+      animation: shimmer 4s ease-in-out infinite;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      animation: shine 3s infinite;
+    }
+
+    @keyframes shine {
+      0% { left: -100%; }
+      100% { left: 100%; }
+    }
+
+    @keyframes shimmer {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
     }
 
     .logo {
-      font-size: 36px;
-      font-weight: bold;
-      margin-bottom: 15px;
+      font-size: 56px;
+      font-weight: 900;
+      margin-bottom: 25px;
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+      letter-spacing: 3px;
+      position: relative;
+      z-index: 1;
+      color: #FFD700;
+      text-transform: uppercase;
     }
 
     .tagline {
-      font-size: 20px;
-      margin-bottom: 20px;
-      max-width: 800px;
+      font-size: 24px;
+      margin-bottom: 30px;
+      max-width: 900px;
       margin-left: auto;
       margin-right: auto;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+      line-height: 1.8;
+      position: relative;
+      z-index: 1;
+      font-weight: 600;
+      color: #ffffff;
     }
 
     /* قسم SEO الجديد */
     .seo-section {
-      background-color: white;
-      border-radius: 8px;
-      padding: 40px;
-      margin: 40px 0;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+      border-radius: 25px;
+      padding: 60px;
+      margin: 60px 0;
+      box-shadow: 0 20px 60px rgba(13, 71, 161, 0.3);
+      border: 2px solid rgba(13, 71, 161, 0.2);
     }
 
     .seo-title {
-      color: #1a5fb4;
-      border-bottom: 2px solid #1a5fb4;
-      padding-bottom: 15px;
-      margin-bottom: 30px;
+      background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      border-bottom: 4px solid #0d47a1;
+      padding-bottom: 25px;
+      margin-bottom: 50px;
       text-align: center;
-      font-size: 32px;
+      font-size: 42px;
+      font-weight: 900;
     }
 
     .seo-image-container {
       width: 100%;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       display: flex;
       justify-content: center;
     }
 
     .seo-image {
       width: 100%;
-      max-width: 800px;
-      height: 400px;
+      max-width: 950px;
+      height: 500px;
       overflow: hidden;
-      border-radius: 8px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 25px;
+      box-shadow: 0 20px 70px rgba(0, 0, 0, 0.4);
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, #1a5fb4 0%, #0d3d6b 100%);
+      background: linear-gradient(135deg, rgba(13, 71, 161, 0.85) 0%, rgba(10, 66, 117, 0.85) 100%),
+                  url('/assets/images/modern.PNG');
+      background-size: cover;
+      background-position: center;
       position: relative;
+      transition: transform 0.4s ease;
+      border: 3px solid #FFD700;
+    }
+
+    .seo-image:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 25px 80px rgba(13, 71, 161, 0.5);
     }
 
     .seo-image-content {
       text-align: center;
       color: white;
-      padding: 20px;
+      padding: 40px;
       z-index: 2;
+      position: relative;
     }
 
     .seo-image-logo {
-      font-size: 36px;
-      font-weight: bold;
-      margin-bottom: 15px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-size: 56px;
+      font-weight: 900;
+      margin-bottom: 25px;
+      text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+      letter-spacing: 3px;
+      animation: fadeInDown 1s ease;
+      color: #FFD700;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .seo-image-text {
-      font-size: 24px;
-      opacity: 0.9;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      font-size: 28px;
+      opacity: 0.98;
+      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+      font-weight: 600;
+      line-height: 1.6;
     }
 
     .seo-image::before {
@@ -324,110 +438,270 @@ import { Title, Meta } from '@angular/platform-browser';
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.4);
+      background: linear-gradient(135deg, rgba(13, 71, 161, 0.75) 0%, rgba(10, 66, 117, 0.75) 100%);
       z-index: 1;
-      border-radius: 8px;
+      border-radius: 23px;
     }
 
     .seo-content {
-      line-height: 1.8;
+      line-height: 2;
       font-size: 18px;
+      color: #2c3e50;
     }
 
     .seo-content h3 {
-      color: #1a5fb4;
-      margin: 25px 0 15px;
-      font-size: 24px;
+      background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin: 40px 0 25px;
+      font-size: 32px;
+      font-weight: 800;
     }
 
     .seo-content p {
-      margin-bottom: 20px;
-      color: #444;
+      margin-bottom: 28px;
+      color: #2c3e50;
+      text-align: justify;
+      font-size: 18px;
+    }
+
+    .seo-content ul {
+      list-style: none;
+      padding: 0;
+      background: linear-gradient(135deg, #f8fbff 0%, #e8f4ff 100%);
+      padding: 30px;
+      border-radius: 15px;
+      border-right: 5px solid #0d47a1;
+    }
+
+    .seo-content li {
+      padding: 15px 0;
+      padding-right: 35px;
+      position: relative;
+      color: #1a1a1a;
+      font-size: 18px;
+      transition: all 0.3s ease;
+      font-weight: 600;
+    }
+
+    .seo-content li:hover {
+      transform: translateX(-8px);
+      color: #0d47a1;
+    }
+
+    .seo-content li::before {
+      content: '💧';
+      position: absolute;
+      right: 0;
+      font-size: 22px;
+      filter: drop-shadow(2px 2px 4px rgba(13, 71, 161, 0.3));
     }
 
     .seo-keywords {
-      background-color: #f0f7ff;
-      padding: 20px;
-      border-radius: 8px;
-      margin: 30px 0;
-      border-right: 4px solid #1a5fb4;
+      background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+      padding: 35px;
+      border-radius: 20px;
+      margin: 50px 0;
+      border-right: 6px solid #FFD700;
+      box-shadow: 0 10px 40px rgba(13, 71, 161, 0.4);
+    }
+
+    .seo-keywords h4 {
+      color: #FFD700;
+      font-size: 26px;
+      margin-bottom: 25px;
+      font-weight: 800;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     .keywords-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 15px;
+      gap: 15px;
+      margin-top: 25px;
     }
 
     .keyword {
-      background-color: #1a5fb4;
-      color: white;
-      padding: 8px 15px;
-      border-radius: 20px;
-      font-size: 14px;
+      background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+      color: #1a1a1a;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 700;
+      box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .keyword:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 30px rgba(255, 215, 0, 0.6);
+      background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
     }
 
     /* قسم الخدمات */
     .services {
-      background-color: white;
-      width: 100%;
-      border-radius: 8px;
-      padding: 30px;
-      margin: 30px 0;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      background: linear-gradient(135deg, #ffffff 0%, #f5f9fc 100%);
+      border-radius: 25px;
+      padding: 60px 50px;
+      margin: 60px 0;
+      box-shadow: 0 20px 60px rgba(13, 71, 161, 0.3);
+      border: 2px solid rgba(13, 71, 161, 0.2);
     }
 
     .service-title {
-      color: #1a5fb4;
-      border-bottom: 2px solid #1a5fb4;
-      padding-bottom: 10px;
-      margin-bottom: 30px;
+      background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      border-bottom: 4px solid #0d47a1;
+      padding-bottom: 20px;
+      margin-bottom: 50px;
       text-align: center;
-      font-size: 28px;
+      font-size: 42px;
+      font-weight: 900;
+    }
+
+    .services p {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 19px;
+      line-height: 1.9;
+      margin-bottom: 50px;
+      max-width: 950px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 500;
     }
 
     .service-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-      margin-top: 20px;
+      gap: 35px;
+      margin-top: 40px;
     }
 
     .service-item {
-      background-color: #f8f9fa;
+      background: white;
       padding: 0;
-      border-radius: 8px;
+      border-radius: 25px;
       overflow: hidden;
-      transition: transform 0.3s;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+      box-shadow: 0 15px 40px rgba(13, 71, 161, 0.25);
+      border: 2px solid rgba(13, 71, 161, 0.15);
+      position: relative;
+    }
+
+    .service-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, #0d47a1 0%, #FFD700 50%, #0d47a1 100%);
+      transform: scaleX(0);
+      transition: transform 0.5s ease;
+      background-size: 200% 100%;
+      animation: gradientShift 3s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .service-item:hover::before {
+      transform: scaleX(1);
     }
 
     .service-item:hover {
-      transform: translateY(-5px);
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: 0 25px 60px rgba(13, 71, 161, 0.4);
+      border-color: #FFD700;
     }
 
     .service-img {
-      height: 200px;
+      height: 220px;
       overflow: hidden;
+      position: relative;
+    }
+
+    .service-img::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(13, 71, 161, 0.15) 0%, rgba(10, 66, 117, 0.15) 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .service-item:hover .service-img::after {
+      opacity: 1;
     }
 
     .service-img img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.5s;
+      transition: transform 0.6s ease;
     }
 
     .service-item:hover .service-img img {
-      transform: scale(1.05);
+      transform: scale(1.15);
     }
 
     .service-content {
-      padding: 20px;
+      padding: 30px;
+      background: white;
+    }
+
+    .service-content h3 {
+      color: #0d47a1;
+      font-size: 24px;
+      margin-bottom: 15px;
+      font-weight: 800;
+    }
+
+    .service-content p {
+      color: #2c3e50;
+      line-height: 1.9;
+      font-size: 17px;
+      font-weight: 500;
     }
 
     /* Company Logo Styling */
+    .logo-container {
+      margin-bottom: 25px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .company-logo-header {
+      max-height: 150px;
+      width: auto;
+      filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.5));
+      animation: float 3s ease-in-out infinite;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border: 3px solid #FFD700;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
     .company-logo {
       max-height: 300px;
       width: auto;
@@ -436,6 +710,60 @@ import { Title, Meta } from '@angular/platform-browser';
 
     .company-logo:hover {
       transform: scale(1.05);
+    }
+
+    /* Video Section */
+    .video-section {
+      background: linear-gradient(135deg, #ffffff 0%, #f5f9fc 100%);
+      border-radius: 25px;
+      padding: 60px 50px;
+      margin: 60px 0;
+      box-shadow: 0 20px 60px rgba(13, 71, 161, 0.3);
+      border: 2px solid rgba(13, 71, 161, 0.2);
+    }
+
+    .video-title {
+      background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      border-bottom: 4px solid #0d47a1;
+      padding-bottom: 20px;
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 42px;
+      font-weight: 900;
+    }
+
+    .video-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 20px 70px rgba(13, 71, 161, 0.4);
+      border: 3px solid #FFD700;
+      position: relative;
+    }
+
+    .service-video {
+      width: 100%;
+      height: auto;
+      display: block;
+      min-height: 400px;
+      background: #000;
+    }
+
+    .video-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #FFD700, #0d47a1, #FFD700);
+      background-size: 200% 100%;
+      animation: gradientShift 3s ease infinite;
+      z-index: 10;
     }
 
     /* قسم لماذا نحن */
@@ -548,63 +876,242 @@ import { Title, Meta } from '@angular/platform-browser';
 
     /* الاتصال */
     .contact {
-      background: linear-gradient(rgba(26, 95, 180, 0.9), rgba(13, 61, 107, 0.9)), url('https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+      background: linear-gradient(135deg, rgba(13, 71, 161, 0.95) 0%, rgba(10, 66, 117, 0.95) 100%), 
+                  url('/assets/images/Capture3.PNG');
       background-size: cover;
       background-position: center;
       color: white;
-      padding: 60px 40px;
-      border-radius: 8px;
+      padding: 80px 60px;
+      border-radius: 30px;
       text-align: center;
-      margin: 40px 0;
+      margin: 60px 0;
+      box-shadow: 0 25px 70px rgba(13, 71, 161, 0.5);
+      position: relative;
+      overflow: hidden;
+      border: 3px solid #FFD700;
+    }
+
+    .contact::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255, 215, 0, 0.2) 0%, transparent 70%);
+      animation: rotate 25s linear infinite;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .contact h2 {
+      font-size: 38px;
+      margin-bottom: 30px;
+      font-weight: 900;
+      position: relative;
+      z-index: 1;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+      color: #FFD700;
+    }
+
+    .contact p {
+      font-size: 28px;
+      margin: 25px 0;
+      position: relative;
+      z-index: 1;
+      font-weight: 700;
+    }
+
+    .contact p i {
+      margin-left: 12px;
+      color: #FFD700;
+      animation: ring 2s ease-in-out infinite;
+      font-size: 32px;
+    }
+
+    @keyframes ring {
+      0%, 100% { transform: rotate(0deg); }
+      10%, 30% { transform: rotate(-15deg); }
+      20%, 40% { transform: rotate(15deg); }
     }
 
     .btn-primary {
-      background-color: #ff6b00;
-      color: white;
-      padding: 15px 35px;
-      border: none;
-      border-radius: 5px;
-      font-size: 18px;
+      background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+      color: #1a1a1a;
+      padding: 22px 60px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 60px;
+      font-size: 26px;
+      font-weight: 800;
       cursor: pointer;
-      transition: background-color 0.3s;
-      margin-top: 20px;
+      transition: all 0.4s ease;
+      margin-top: 35px;
       display: inline-block;
       text-decoration: none;
+      box-shadow: 0 15px 40px rgba(255, 165, 0, 0.6);
+      position: relative;
+      z-index: 1;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
     .btn-primary:hover {
-      background-color: #e55d00;
-      transform: translateY(-2px);
+      background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
+      transform: translateY(-8px) scale(1.08);
+      box-shadow: 0 20px 50px rgba(255, 165, 0, 0.8);
+      color: #000;
+      border-color: #fff;
+    }
+
+    .btn-primary:active {
+      transform: translateY(-3px) scale(1.03);
     }
 
     /* التذييل */
     footer {
-      background-color: #0d3d6b;
+      background: linear-gradient(135deg, #0a2540 0%, #0d47a1 100%);
       color: white;
       text-align: center;
-      padding: 30px;
-      margin-top: 50px;
+      padding: 60px 40px;
+      margin-top: 100px;
+      box-shadow: 0 -15px 50px rgba(0, 0, 0, 0.4);
+      position: relative;
+    }
+
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #FFD700, #0d47a1, #FFD700, #0d47a1);
+      background-size: 300% 100%;
+      animation: gradientMove 4s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    footer p {
+      margin: 18px 0;
+      font-size: 17px;
+      line-height: 1.9;
+      opacity: 0.98;
+      font-weight: 500;
     }
 
     .social-icons {
-      margin: 20px 0;
+      margin: 35px 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
     }
 
     .social-icons a {
       color: white;
-      font-size: 24px;
-      margin: 0 10px;
-      transition: color 0.3s;
+      font-size: 32px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255, 215, 0, 0.15);
+      transition: all 0.4s ease;
+      border: 3px solid rgba(255, 215, 0, 0.3);
     }
 
     .social-icons a:hover {
-      color: #ff6b00;
+      background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+      color: #0a2540;
+      transform: translateY(-10px) scale(1.15);
+      border-color: #FFD700;
+      box-shadow: 0 15px 35px rgba(255, 215, 0, 0.5);
     }
 
     .visit-logs {
       background-color: white;
       border-radius: 8px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Cities Service Grid */
+    .cities-service {
+      margin: 50px 0;
+    }
+
+    .cities-service h3 {
+      background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 35px;
+      text-align: center;
+    }
+
+    .cities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .city-item {
+      background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+      padding: 35px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 35px rgba(13, 71, 161, 0.2);
+      transition: all 0.4s ease;
+      border: 2px solid rgba(13, 71, 161, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .city-item::before {
+      content: '💧';
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 60px;
+      opacity: 0.1;
+      transition: all 0.4s ease;
+    }
+
+    .city-item:hover::before {
+      opacity: 0.3;
+      transform: scale(1.2) rotate(20deg);
+    }
+
+    .city-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(13, 71, 161, 0.35);
+      border-color: #FFD700;
+    }
+
+    .city-item h4 {
+      color: #0d47a1;
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .city-item p {
+      color: #2c3e50;
+      line-height: 1.8;
+      font-size: 16px;
+      font-weight: 500;
+      position: relative;
+      z-index: 1;
     }
 
     .fixed-contact-icons.hidden .phone-icon,
@@ -614,6 +1121,69 @@ import { Title, Meta } from '@angular/platform-browser';
 
     .contact-icon.hidden {
       display: none;
+    }
+
+    /* تصميم أقسام المدن */
+    .cities-service {
+      margin: 40px 0;
+    }
+
+    .cities-service h3 {
+      background: linear-gradient(135deg, #007bff 0%, #00b4db 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 28px;
+      margin-bottom: 30px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .cities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .city-item {
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      padding: 30px;
+      border-radius: 18px;
+      text-align: center;
+      transition: all 0.4s ease;
+      box-shadow: 0 8px 25px rgba(0, 123, 255, 0.12);
+      border: 2px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .city-item::before {
+      content: '📍';
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 28px;
+      opacity: 0.3;
+    }
+
+    .city-item:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 15px 40px rgba(0, 123, 255, 0.25);
+      border-color: #007bff;
+    }
+
+    .city-item h4 {
+      color: #007bff;
+      font-size: 20px;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .city-item p {
+      color: #5a6c7d;
+      line-height: 1.7;
+      font-size: 15px;
     }
 
     /* التجاوب مع الشاشات المختلفة */
@@ -677,90 +1247,90 @@ export class FurnitureTransportationComponent implements OnInit {
    visitCount = 0;
   contactIconsHidden = false;
 
-  seoTitle = 'الضمان الذهبي لنقل العفش - أفضل شركة نقل أثاث في المملكة العربية السعودية';
-  seoDescription = 'شركة متخصصة في نقل العفش مع خدمات الفك والتركيب والتغليف والضمان في جدة والرياض وجميع مدن المملكة. فنيون محترفون وأسعار تنافسية. اتصل الآن: 0559160622';
+  seoTitle = 'وايت مياه الزعيم - أفضل خدمة توصيل مياه تحلية في جدة';
+  seoDescription = 'شركة متخصصة في توصيل مياه التحلية النقية لجميع أنحاء جدة. خدمة 24 ساعة، صهاريج 7 طن، موتور رفع وليات طويلة. فاتورة ضريبية وسجل تجاري. اتصل الآن: 0547293083';
 
   keywords = [
-    'نقل عفش جدة',
-    'شركة نقل أثاث الرياض',
-    'فك وتركيب عفش',
-    'تغليف العفش',
-    'نقل عفش مكة',
-    'نقل عفش المدينة المنورة',
-    'نقل عفش الدمام',
-    'نقل عفش الخبر',
-    'نقل المكاتب',
-    'تخزين العفش',
-    'فك وتركيب المطابخ',
-    'فك وتركيب المكيفات',
-    'أفضل شركة نقل عفش',
-    'أسعار نقل العفش'
+    'وايت مياه جدة',
+    'توصيل مياه تحلية جدة',
+    'صهريج مياه 7 طن',
+    'وايت مياه الزعيم',
+    'مياه تحلية نقية',
+    'وايت مياه الروضة',
+    'وايت مياه الفيصلية',
+    'وايت مياه الصفا والمروة',
+    'موتور رفع مياه',
+    'خدمة 24 ساعة',
+    'ليات طويلة',
+    'فاتورة ضريبية',
+    'سجل تجاري',
+    'وايت مياه للمطاعم'
   ];
 
   services = [
     {
-      title: 'فك وتركيب العفش',
-      description: 'فنيون متخصصون محترفون في فك وتركيب جميع أنواع غرف النوم، المطابخ، المكيفات، الستائر، النجف، والسخانات.',
-      image: '/assets/images/1.png'
+      title: 'توصيل مياه 7 طن',
+      description: 'صهاريج مياه حديثة سعة 7 طن لتوصيل مياه التحلية النقية لمنزلك أو مطعمك أو كافيهك.',
+      image: '/assets/images/777.jpeg'
     },
     {
-      title: 'تغليف العفش',
-      description: 'نستخدم مواد تغليف عالية الجودة لحماية عفشكم من الخدوش والتلف أثناء عملية النقل.',
-      image: '/assets/images/cover.jpeg'
+      title: 'موتور رفع للخزانات',
+      description: 'نوفر خدمة موتور رفع مع ليات طويلة لتوصيل المياه للخزانات المرتفعة بكل سهولة.',
+      image: '/assets/images/888.png'
     },
     {
-      title: 'نقل العفش',
-      description: 'سيارات مقفولة ومجهزة بشكل خاص لنقل العفش إلى جميع أنحاء المملكة العربية السعودية.',
-      image: '/assets/images/tran.jpg'
+      title: 'خدمة 24 ساعة',
+      description: 'خدمة عملاء مميزة متوفرة على مدار الساعة - نصلك أينما كنت في جدة في أي وقت.',
+      image: '/assets/images/work1.jpeg'
     },
     {
-      title: 'خدمة الضمان',
-      description: 'نقدم ضماناً على خدماتنا لضمان رضاكم التام عن جودة العمل المقدم.',
-      image: '/assets/images/quality.png'
+      title: 'فاتورة وسجل تجاري',
+      description: 'نوفر فاتورة ضريبية وسجل تجاري للمطاعم والكافيهات والمنشآت التجارية.',
+      image: '/assets/images/mony.png'
     }
   ];
 
   features = [
     {
-      icon: 'fas fa-truck-moving',
-      title: 'سيارات مجهزة',
-      description: 'سيارات نقل مقفولة ومجهزة خصيصاً لنقل العفش بأمان'
+      icon: 'fas fa-tint',
+      title: 'مياه نقية',
+      description: 'مياه تحلية نقية وآمنة 100٪ للشرب'
     },
     {
-      icon: 'fas fa-user-cog',
-      title: 'فنيون متخصصون',
-      description: 'فريق من الفنيين المحترفين في فك وتركيب جميع أنواع العفش'
+      icon: 'fas fa-shipping-fast',
+      title: 'سرعة التوصيل',
+      description: 'توصيل سريع لجميع أنحاء جدة - نصلك في أسرع وقت'
     },
     {
       icon: 'fas fa-tag',
-      title: 'أسعار مناسبة',
-      description: 'أسعارنا تنافسية وتحدد بعد المعاينة من قبل المندوب'
+      title: 'أفضل الأسعار',
+      description: 'أسعار تنافسية مع خصم 30٪ - أفضل سعر في السوق'
     },
     {
-      icon: 'fas fa-award',
-      title: 'جودة مضمونة',
-      description: 'نضمن لكم خدمة عالية الجودة من البداية حتى النهاية'
+      icon: 'fas fa-clock',
+      title: 'خدمة 24 ساعة',
+      description: 'متاحون على مدار الساعة لخدمتكم'
     }
   ];
 
   galleryImages = [
-    { src: '/assets/images/gallery1.jpeg', alt: 'نقل عفش في الرياض' },
-    { src: '/assets/images/gallery2.jpeg', alt: 'تغليف العفش' },
-    { src: '/assets/images/gallery3.jpeg', alt: 'فك وتركيب' },
-    { src: '/assets/images/gallery4.jpeg', alt: 'سيارة نقل مجهزة' },
-    { src: '/assets/images/gallery5.jpeg', alt: 'مواد التغليف' },
-    { src: '/assets/images/gallery6.jpeg', alt: 'فنيون محترفون' }
+    { src: '/assets/images/777.jpeg', alt: 'صهريج مياه 7 طن' },
+    { src: '/assets/images/888.png', alt: 'توصيل مياه في جدة' },
+    { src: '/assets/images/water.jpg', alt: 'مياه تحلية نقية' },
+    { src: '/assets/images/work1.jpeg', alt: 'فريق العمل' },
+    { src: '/assets/images/modern.PNG', alt: 'خدمة عملاء' },
+    { src: '/assets/images/WhatsApp Image 2026-02-09 at 11.12.25 AM.jpeg', alt: 'وايت مياه الزعيم' }
   ];
 
   serviceCities = [
-    'جدة',
-    'الرياض',
-    'حائل',
-    'مكة المكرمة',
-    'المدينة المنورة',
-    'الدمام',
-    'الخبر',
-    'وغيرها من المدن والمناطق'
+    'الروضة',
+    'الفيصلية',
+    'الصفا والمروة',
+    'النخيل',
+    'السامر',
+    'الشاطئ',
+    'النسيم',
+    'وجميع أحياء جدة'
   ];
 
    constructor(
@@ -793,7 +1363,7 @@ export class FurnitureTransportationComponent implements OnInit {
     // Add additional meta tags
     this.metaService.updateTag({
       name: 'keywords',
-      content: 'نقل عفش جدة, شركة نقل أثاث الرياض, فك وتركيب عفش, نقل عفش مع الضمان, تغليف العفش'
+      content: 'وايت مياه جدة, توصيل مياه تحلية جدة, صهريج مياه 7 طن, وايت مياه الزعيم, مياه نقية جدة, خدمة 24 ساعة'
     });
 
     // Canonical URL
@@ -810,17 +1380,17 @@ export class FurnitureTransportationComponent implements OnInit {
       script.type = 'application/ld+json';
       script.text = JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "MovingCompany",
-        "name": "مؤسسة الضمان الذهبي لنقل الأثاث",
-        "telephone": "+966559160622",
+        "@type": "LocalBusiness",
+        "name": "وايت مياه الزعيم",
+        "telephone": "+966547293083",
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "SA",
           "addressRegion": "Makkah Province",
           "addressLocality": "جدة"
         },
-        "areaServed": ["جدة", "الرياض", "مكة المكرمة", "المدينة المنورة"],
-        "serviceType": ["نقل العفش", "فك وتركيب الأثاث", "تغليف العفش"]
+        "areaServed": ["جدة", "الروضة", "الفيصلية", "الصفا والمروة", "النخيل"],
+        "serviceType": ["توصيل مياه تحلية", "صهاريج 7 طن", "موتور رفع للخزانات", "خدمة 24 ساعة"]
       });
       document.head.appendChild(script);
     }
@@ -828,7 +1398,7 @@ export class FurnitureTransportationComponent implements OnInit {
 
   private setPageMetadata(): void {
     // Set page title for browser tab
-    this.titleService.setTitle('الضمان الذهبي لنقل الأثاث - أفضل شركة نقل عفش في جدة والسعودية');
+    this.titleService.setTitle('وايت مياه الزعيم - أفضل خدمة توصيل مياه تحلية في جدة');
     
     // Set favicon
     this.setFavicon('/assets/images/logo.png');
@@ -836,7 +1406,7 @@ export class FurnitureTransportationComponent implements OnInit {
     // Set meta description
     this.metaService.updateTag({
       name: 'description',
-      content: 'مؤسسة الضمان الذهبي لنقل الأثاث - خدمات نقل العفش مع الفك والتركيب والتغليف والضمان في جدة وجميع أنحاء المملكة العربية السعودية. اتصل الآن: 0559160622'
+      content: 'وايت مياه الزعيم - خدمات توصيل مياه تحلية نقية على مدار 24 ساعة في جميع أنحاء جدة. صهاريج 7 طن، موتور رفع وليات طويلة. اتصل الآن: 0547293083'
     });
   }
 
